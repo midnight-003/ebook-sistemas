@@ -9,18 +9,25 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
-            color: #333;
+            background: linear-gradient(135deg, #ff0091, #105d18, #c0ff00);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
         }
         .container {
-            width: 100%;
+            width: 90%;
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            color: #333;
         }
         header {
-            text-align: center;
-            background-color: #32cd32;
+            background-color: #ff0091;
             padding: 20px;
             color: white;
             border-radius: 10px;
@@ -29,18 +36,21 @@
             font-size: 2.5em;
             margin: 0;
         }
-        .content {
-            margin-top: 20px;
-        }
         .content h2 {
-            text-align: center;
-            color: #006400;
-            font-size: 2em;
+            color: #105d18;
+            font-size: 2.2em;
         }
         .description {
-            font-size: 1.1em;
-            line-height: 1.6;
+            font-size: 1.2em;
+            line-height: 1.8;
             margin: 20px 0;
+            text-align: left;
+        }
+        .highlight {
+            background-color: #32cd32;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
         .pay-section {
             background-color: #fff;
@@ -48,59 +58,76 @@
             border-radius: 10px;
             margin-top: 40px;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: 3px solid #ff0091;
         }
-        .pay-section h2 {
-            color: #32cd32;
+        .bonus {
+            font-size: 1.1em;
+            background-color: #ff0091;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
         }
         .pay-button {
             background-color: #32cd32;
             color: white;
-            font-size: 1.2em;
-            padding: 15px 30px;
+            font-size: 1.4em;
+            padding: 15px 40px;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
             margin-top: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
         }
         .pay-button:hover {
             background-color: #228b22;
+            transform: scale(1.05);
+        }
+        .guarantee {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #333;
+            font-weight: bold;
+        }
+        .guarantee span {
+            color: #ff0091;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
         <header>
-            <h1>Ebook Sistemas - Guia Rápido - Dis’frutar</h1>
+            <h1>📗 Ebook Sistemas - Guia Rápido</h1>
         </header>
 
         <div class="content">
-            <h2>🌿 Seu Guia Rápido de Plantas Medicinais 🌿</h2>
+            <h2>🌿 Transforme sua Saúde com a Natureza! 🌿</h2>
             <p class="description">
-                🔎 Descubra o poder das ervas certas para cada sistema do seu corpo!<br>
-                Chega de pesquisar por horas ou ficar perdido(a) em informações soltas! 📖✨<br><br>
-                Este ebook prático e direto ao ponto vai te mostrar:<br><br>
-                ✅ Os principais sistemas do corpo humano e como fortalecê-los naturalmente.<br>
-                ✅ As melhores plantas medicinais para cada problema de saúde – digestão, imunidade, ansiedade, circulação e muito mais!<br>
-                ✅ Receitas de blends exclusivos para chá, infusão e óleos terapêuticos.<br>
-                ✅ Dicas fáceis de aplicar no dia a dia para ter mais bem-estar de forma natural.<br><br>
-                🍵 Simples. Eficiente. Natural. 🍃<br><br>
-                🔗 Baixe agora e tenha um guia essencial sempre à mão!
+                🔎 <span class="highlight">Descubra os segredos das plantas medicinais</span> para fortalecer os sistemas do seu corpo!<br><br>
+                🚀 <strong>Tenha acesso a um guia completo</strong> com soluções naturais e eficazes para sua saúde e bem-estar!<br><br>
+                ✅ <strong>Aprenda</strong> quais plantas usar para melhorar digestão, imunidade, ansiedade, circulação e muito mais!<br>
+                ✅ <strong>Receitas exclusivas</strong> de chás, infusões e óleos terapêuticos para uso no dia a dia.<br>
+                ✅ <strong>Dicas práticas</strong> e seguras para aplicar imediatamente e sentir os benefícios!<br><br>
+                🍵 <strong>Solução Natural, Simples e Poderosa!</strong> 🍃<br><br>
+                ⏳ <strong>Promoção por tempo limitado!</strong> Garanta agora o seu ebook e transforme sua saúde naturalmente! ✨
             </p>
         </div>
 
-        <!-- Seção de Pagamento -->
         <div class="pay-section">
-            <h2>🛒 Finalize sua compra</h2>
-            <p>Escolha uma das opções abaixo para completar a compra do seu Ebook.</p>
+            <h2>🛒 Finalize sua compra!</h2>
+            <p>🌟 Acesso imediato após a compra + <strong>BÔNUS ESPECIAL</strong> 🎁</p>
+            <p class="bonus">🔥 BÔNUS: Guia de Blends Terapêuticos GRATUITO! 🔥</p>
             
-            <!-- Botão de pagamento via Hotmart -->
             <a href="https://pay.hotmart.com/W98736761G" target="_blank">
-                <button class="pay-button">Comprar Agora</button>
+                <button class="pay-button"> Compre agora! </button>
             </a>
+            <p class="guarantee">✔️ Compra 100% segura | <span>Satisfação Garantida!</span></p>
         </div>
     </div>
-
 </body>
 </html>
