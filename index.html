@@ -3,73 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebook Sistemas - Guia Rápido</title>
+    <title>Ebook Sistemas - Guia Rápido - Dis’frutar</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f5f5dc;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
         }
         .container {
-            max-width: 600px;
-            margin: auto;
-            background: #fff;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #32cd32;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .content h2 {
+            text-align: center;
+            color: #006400;
+            font-size: 2em;
+        }
+        .description {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .pay-section {
+            background-color: #fff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            color: #4a7c59;
+        .pay-section h2 {
+            color: #32cd32;
         }
-        .highlight {
-            font-weight: bold;
-            color: #e67e22;
-        }
-        .pix-box {
-            margin-top: 20px;
-            background: #fff3cd;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        .pix-key {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .cta-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #4a7c59;
+        .pay-button {
+            background-color: #32cd32;
             color: white;
-            text-decoration: none;
-            font-size: 18px;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            border: none;
             border-radius: 5px;
-        }
-        .cta-button:hover {
-            background: #3b6247;
-        }
-        .image {
+            cursor: pointer;
             margin-top: 20px;
-            width: 100%;
-            border-radius: 10px;
+        }
+        .pay-button:hover {
+            background-color: #228b22;
+        }
+        .pix-code {
+            background-color: #f7f7f7;
+            border: 2px dashed #32cd32;
+            padding: 10px;
+            font-size: 1.1em;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>Ebook Sistemas - Guia Rápido - <span class="highlight">Dis’frutar</span></h1>
-        <p>🌿 Seu Guia Rápido de Plantas Medicinais 🌿</p>
-        <p>🔎 Descubra o poder das ervas certas para cada sistema do seu corpo!</p>
-        <p>✅ Os principais sistemas do corpo humano e como fortalecê-los naturalmente.</p>
-        <p>✅ As melhores plantas medicinais para cada problema de saúde.</p>
-        <p>✅ Receitas de blends exclusivos para chá, infusão e óleos terapêuticos.</p>
-        <p>✅ Dicas fáceis para o seu bem-estar diário.</p>
-        <div class="pix-box">
-            <p>🔗 Para adquirir, faça o pagamento via Pix:</p>
-            <p class="pix-key">42.538.760/0001-05</p>
+        <header>
+            <h1>Ebook Sistemas - Guia Rápido - Dis’frutar</h1>
+        </header>
+
+        <div class="content">
+            <h2>🌿 Seu Guia Rápido de Plantas Medicinais 🌿</h2>
+            <p class="description">
+                🔎 Descubra o poder das ervas certas para cada sistema do seu corpo!<br>
+                Chega de pesquisar por horas ou ficar perdido(a) em informações soltas! 📖✨<br><br>
+                Este ebook prático e direto ao ponto vai te mostrar:<br><br>
+                ✅ Os principais sistemas do corpo humano e como fortalecê-los naturalmente.<br>
+                ✅ As melhores plantas medicinais para cada problema de saúde – digestão, imunidade, ansiedade, circulação e muito mais!<br>
+                ✅ Receitas de blends exclusivos para chá, infusão e óleos terapêuticos.<br>
+                ✅ Dicas fáceis de aplicar no dia a dia para ter mais bem-estar de forma natural.<br><br>
+                🍵 Simples. Eficiente. Natural. 🍃<br><br>
+                🔗 Baixe agora e tenha um guia essencial sempre à mão!
+            </p>
         </div>
-        <a href="#" class="cta-button">Baixar Agora</a>
+
+        <!-- Seção de Pagamento -->
+        <div class="pay-section">
+            <h2>🛒 Finalize sua compra</h2>
+            <p>Escolha uma das opções abaixo para completar a compra do seu Ebook.</p>
+            
+            <!-- Seção Pix -->
+            <div class="pix-code">
+                <h3>📲 Pagamento via Pix</h3>
+                <p><strong>Chave Pix:</strong> 42.538.760/0001-05</p>
+                <button class="pay-button" onclick="copyPix()">Copiar Código Pix</button>
+                <p>Escaneie o QR Code ou copie o código acima para realizar o pagamento via Pix.</p>
+                <img src="https://www.qr-code-generator.com/wp-content/uploads/2021/11/qr-code-example.jpg" alt="QR Code Pix" width="200">
+            </div>
+        </div>
     </div>
+
+    <script>
+        function copyPix() {
+            navigator.clipboard.writeText("42.538.760/0001-05");
+            alert("Código Pix copiado!");
+        }
+    </script>
+
 </body>
 </html>
