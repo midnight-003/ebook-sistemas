@@ -66,13 +66,6 @@
         .pay-button:hover {
             background-color: #228b22;
         }
-        .pix-code {
-            background-color: #f7f7f7;
-            border: 2px dashed #32cd32;
-            padding: 10px;
-            font-size: 1.1em;
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
@@ -102,22 +95,12 @@
             <h2>🛒 Finalize sua compra</h2>
             <p>Escolha uma das opções abaixo para completar a compra do seu Ebook.</p>
             
-            <!-- Seção Pix -->
-            <div class="pix-code">
-                <h3>📲 Pagamento via Pix</h3>
-                <p><strong>Chave Pix:</strong> 42.538.760/0001-05</p>
-                <button class="pay-button" onclick="copyPix()">Copiar Código Pix</button>
-                <p> Copie o código acima para realizar o pagamento via Pix.</p>
-            </div>
+            <!-- Botão de pagamento via Hotmart -->
+            <a href="https://pay.hotmart.com/W98736761G" target="_blank">
+                <button class="pay-button">Comprar Agora</button>
+            </a>
         </div>
     </div>
-
-    <script>
-        function copyPix() {
-            navigator.clipboard.writeText("42.538.760/0001-05");
-            alert("Código Pix copiado!");
-        }
-    </script>
 
 </body>
 </html>
